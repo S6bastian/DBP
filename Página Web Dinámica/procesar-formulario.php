@@ -22,6 +22,33 @@ $aptitudes = $_POST["aptitudes"];
 $habilidades = implode(", ", $_POST["habilidades"]);
 $perfil = $_POST["perfil"];
 
+extract($_REQUEST);
+$file=fopen("form-save.txt","a");
+
+fwrite($file,"nombre: ");
+fwrite($file, $nombre ."\n");
+fwrite($file,"apellidos: ");
+fwrite($file, $nombre ."\n");
+fwrite($file,"fecha de nacimiento: ");
+fwrite($file, $fecha_nacimiento ."\n");
+fwrite($file,"ocupacion: ");
+fwrite($file, $ocupacion ."\n");
+fwrite($file,"contacto: ");
+fwrite($file, $contacto ."\n");
+fwrite($file,"nacionalidad: ");
+fwrite($file, $nacionalidad ."\n");
+fwrite($file,"nivel de ingles: ");
+fwrite($file, $nivel_ingles ."\n");
+fwrite($file,"lenguajes: ");
+fwrite($file, $lenguajes ."\n");
+fwrite($file,"aptitudes: ");
+fwrite($file, $aptitudes ."\n");
+fwrite($file,"habilidades: ");
+fwrite($file, $habilidades ."\n");
+fwrite($file,"perfil: ");
+fwrite($file, $perfil ."\n");
+fclose($file);
+
 $sql = "INSERT INTO registros (nombre, apellidos, fecha_nacimiento, ocupacion, contacto, nacionalidad, nivel_ingles, lenguajes, aptitudes, habilidades, perfil) 
         VALUES ('$nombre', '$apellidos', '$fecha_nacimiento', '$ocupacion', '$contacto', '$nacionalidad', '$nivel_ingles', '$lenguajes', '$aptitudes', '$habilidades', '$perfil')";
 

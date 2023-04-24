@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="form.css">
+	<title>Formulario de Registro</title>
+</head>
+<body>
+	<h1 id="title">Formulario a CV</h1>
+    <p id="description">Responde la encuesta:</p>
+	<form action="procesar-formulario.php" method="post">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+
+		<label for="apellidos">Apellidos:</label>
+		<input type="text" id="apellidos" name="apellidos" required><br><br>
+
+		<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+		<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+		<label for="ocupacion">Ocupacion:</label>
+		<input type="text" id="ocupacion" name="ocupacion" required><br><br>
+
+		<label for="contacto">Contacto:</label>
+		<input type="text" id="contacto" name="contacto" required><br><br>
+
+		<label for="nacionalidad">Nacionalidad:</label>
+		<select id="nacionalidad" name="nacionalidad" required>
+			<option value="">-- Seleccione su nacionalidad --</option>
+			<option value="mx">Mexico</option>
+			<option value="us">Estados Unidos</option>
+			<option value="ca">Peru</option>
+			<option value="ar">Argentina</option>
+			<option value="cl">Chile</option>
+		</select><br><br>
+
+		<label for="nivel_ingles">Nivel de Ingles:</label><br><br>
+		<label for="basico"><input type="radio" id="basico" name="nivel_ingles" value="basico" required class="inline">Basico</label><br>
+		<label for="intermedio"><input type="radio" id="intermedio" name="nivel_ingles" value="intermedio" class="inline">Intermedio</label><br>
+		<label for="avanzado"><input type="radio" id="avanzado" name="nivel_ingles" value="avanzado" class="inline">Avanzado</label><br><br>
+
+		<label for="lenguajes">Lenguaje de Programación:</label><br><br>
+		<select id="lenguajes" name="lenguajes[]" multiple>
+			<option value="python">Python</option>
+			<option value="javascript">JavaScript</option>
+			<option value="php">PHP</option>
+			<option value="java">Java</option>
+			<option value="ruby">Ruby</option>
+		</select><br>
+
+		<label for="aptitudes">Aptitudes:</label><br><br>
+		<input type="text" id="aptitudes" name="aptitudes" list="habilidades" required>
+		<datalist id="habilidades">
+			<option value="Trabajo en equipo">
+			<option value="Comunicación">
+			<option value="Resolución de problemas">
+			<option value="Creatividad">
+			<option value="Liderazgo">
+		</datalist><br><br>
+		<label for="habilidades">Habilidades:</label><br>
+		<label for="habilidades1"><input type="checkbox" id="habilidades1" name="habilidades[]" value="Trabajo en equipo" class="inline">Trabajo en equipo</label><br>
+		<label for="habilidades2"><input type="checkbox" id="habilidades2" name="habilidades[]" value="Comunicación" class="inline">Comunicación</label><br>	
+		<label for="habilidades3"><input type="checkbox" id="habilidades3" name="habilidades[]" value="Resolución de problemas" class="inline">Resolución de problemas</label><br>	
+		<label for="habilidades4"><input type="checkbox" id="habilidades4" name="habilidades[]" value="Creatividad" class="inline">Creatividad</label><br>	
+		<label for="habilidades5"><input type="checkbox" id="habilidades5" name="habilidades[]" value="Liderazgo" class="inline">Liderazgo</label><br>
+
+		<label for="perfil">Perfil:</label><br><br>
+		<textarea id="perfil" name="perfil" rows="5" cols="40" required></textarea><br>
+
+		<input type="submit" value="Enviar" class="submit">
+	</form>
+</body>
+</html>

@@ -22,6 +22,20 @@ $aptitudes = $_POST["aptitudes"];
 $habilidades = implode(", ", $_POST["habilidades"]);
 $perfil = $_POST["perfil"];
 
+
+
+$sql = "INSERT INTO registros (nombre, apellidos, fecha_nacimiento, ocupacion, contacto, nacionalidad, nivel_ingles, lenguajes, aptitudes, habilidades, perfil) 
+        VALUES ('$nombre', '$apellidos', '$fecha_nacimiento', '$ocupacion', '$contacto', '$nacionalidad', '$nivel_ingles', '$lenguajes', '$aptitudes', '$habilidades', '$perfil')";
+
+if (!$conexion->query($sql)) {
+  die('Error al insertar los datos: ' . $conexion->error);
+}
+
+echo "Los datos se guardaron correctamente";
+} else {
+echo "No se enviaron los datos del formulario";
+}
+
 extract($_REQUEST);
 $file=fopen("form-save.txt","a");
 
@@ -48,18 +62,6 @@ fwrite($file, $habilidades ."\n");
 fwrite($file,"perfil: ");
 fwrite($file, $perfil ."\n");
 fclose($file);
-
-$sql = "INSERT INTO registros (nombre, apellidos, fecha_nacimiento, ocupacion, contacto, nacionalidad, nivel_ingles, lenguajes, aptitudes, habilidades, perfil) 
-        VALUES ('$nombre', '$apellidos', '$fecha_nacimiento', '$ocupacion', '$contacto', '$nacionalidad', '$nivel_ingles', '$lenguajes', '$aptitudes', '$habilidades', '$perfil')";
-
-if (!$conexion->query($sql)) {
-  die('Error al insertar los datos: ' . $conexion->error);
-}
-
-echo "Los datos se guardaron correctamente";
-} else {
-echo "No se enviaron los datos del formulario";
-}
 
 $conexion->close();
 

@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS registros (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(30) NOT NULL,
+  apellidos VARCHAR(30) NOT NULL,
+  fecha_nacimiento DATE NOT NULL,
+  ocupacion VARCHAR(30) NOT NULL,
+  contacto VARCHAR(30) NOT NULL,
+  nacionalidad VARCHAR(2) NOT NULL,
+  nivel_ingles VARCHAR(20) NOT NULL,
+  lenguajes VARCHAR(50) NOT NULL,
+  aptitudes VARCHAR(50) NOT NULL,
+  habilidades VARCHAR(100) NOT NULL,
+  perfil TEXT NOT NULL
+);
+
+
+
+http://localhost/tareaform/
+
+

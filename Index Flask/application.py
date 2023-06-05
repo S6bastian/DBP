@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/TODO_List")
+def TODO():
+    return render_template("TODO List/index.html")
+
 #conditions
 @app.route("/new_year")
 def new_year():

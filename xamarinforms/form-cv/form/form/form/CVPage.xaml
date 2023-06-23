@@ -1,0 +1,17 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="form_cv.CVPage">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="20" BackgroundColor="Beige">
+        <Label Text="CV" FontSize="50" TextColor="Black"/>
+        <Label Text="Nombre:" TextColor="Black"/>
+        <Label Text="{Binding Nombre}" FontSize="20" TextColor="Black"/>
+        <Label Text="Edad:" TextColor="Black"/>
+        <Label Text="{Binding Edad}" FontSize="20" TextColor="Black"/>
+        <Label Text="Ocupacion:" TextColor="Black"/>
+        <Label Text="{Binding Ocupacion}" FontSize="20" TextColor="Black"/>
+        <Label Text="Pais:" TextColor="Black"/>
+        <Label Text="{Binding Pais}" FontSize="20" TextColor="Black"/>
+        <Label Text="Email:" TextColor="Black"/>
+        <Label Text="{Binding Email}" FontSize="20" TextColor="Black"/>
+    </StackLayout>
+</ContentPage>

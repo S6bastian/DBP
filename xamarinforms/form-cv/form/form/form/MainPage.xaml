@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="form_cv.MainPage">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="20">
+        <Label Text="Datos del CV" FontSize="50" TextColor="White"/>
+        <Entry Placeholder="Nombre" x:Name="nameEntry" />
+        <Entry Placeholder="Edad" Keyboard="Numeric" x:Name="ageEntry" />
+        <Entry Placeholder="Ocupación" x:Name="occupationEntry" />
+        <Entry Placeholder="País" x:Name="countryEntry" />
+        <Entry Placeholder="Correo electrónico" Keyboard="Email" x:Name="emailEntry" />
+        <Button Text="Enviar" Clicked="SubmitButtonClicked" />
+    </StackLayout>
+</ContentPage>

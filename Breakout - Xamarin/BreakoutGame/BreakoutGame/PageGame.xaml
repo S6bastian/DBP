@@ -8,7 +8,7 @@
 
         <StackLayout VerticalOptions="Fill">
             <StackLayout VerticalOptions="CenterAndExpand" IsVisible="true" x:Name="btnCommencer">
-                <Button Text="Commencer" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" BorderWidth="1.5" BorderColor="Red" BackgroundColor="Transparent" CornerRadius="20" TextColor="Red" Clicked="Button_Clicked"/>
+                <Button Text="Empezar" FontAttributes="Bold" HorizontalOptions="Center" FontSize="Large" BorderWidth="1.5" BorderColor="Yellow" BackgroundColor="Transparent" CornerRadius="20" TextColor="Yellow" Clicked="Button_Clicked"/>
             </StackLayout>
 
             <StackLayout VerticalOptions="FillAndExpand" IsVisible="false" x:Name="gameStacklayout">

@@ -11,7 +11,6 @@
             </StackLayout>
             <ImageButton x:Name="imgTitle" Clicked="Button_Clicked"  Source="btnPlay.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.7,1,0.3"
                          HorizontalOptions="Center" BackgroundColor="Transparent" CornerRadius="20"/>
-            <Label Text="@kigames" HorizontalOptions="Center" TextColor="White" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,1,1,0.04"/>   
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

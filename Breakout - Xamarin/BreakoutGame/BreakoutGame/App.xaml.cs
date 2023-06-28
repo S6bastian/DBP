@@ -15,7 +15,7 @@ namespace BreakoutGame
 
         protected override void OnStart()
         {
-            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            Device.StartTimer(TimeSpan.FromSeconds(5), () =>
             {
                 MainPage = new NavigationPage(new HomePage());
                 

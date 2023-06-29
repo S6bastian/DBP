@@ -8,15 +8,13 @@ namespace BreakoutGame
 {
     public class classPadde
     {
-        public BoxView boxPadde { get; set; }
-        public double valueX { get; set; }
-        private double _positionX { get; set; }
-        private double _positionY { get; set; }
-        private double _sizeWidth { get; set; }
-        private double _sizeHeight { get; set; }
-        public classPadde(double value)
+        public BoxView boxPadde;
+        private double _positionX;
+        private double _positionY;
+        private double _sizeWidth;
+        private double _sizeHeight;
+        public classPadde()
         {
-            valueX = value;
         }
         public void createPadde(double x, double y, double width, double height)
         {
@@ -29,23 +27,18 @@ namespace BreakoutGame
             boxPadde.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
             boxPadde.SetValue(AbsoluteLayout.LayoutFlagsProperty, AbsoluteLayoutFlags.All);
         }
-        public void setPaddlePosition(double x)
+        public void setPaddePosition(double x)
         {
             Rectangle paddingRect = new Rectangle(x, _positionY, _sizeWidth, _sizeHeight);
             boxPadde.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
             _positionX = x;
         }
-        public void setPaddleSize(double width, double height)
+        public void setPaddeSize(double width, double height)
         {
             Rectangle paddingRect = new Rectangle(_positionX, _positionY, width, height);
             boxPadde.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
             _sizeWidth = width;
             _sizeHeight = height;
-        }
-        public void movePadde()
-        {
-            Rectangle paddingRect = new Rectangle(boxPadde.X + valueX, boxPadde.Y, boxPadde.Width, boxPadde.Height);
-            boxPadde.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
         }
     }
 }

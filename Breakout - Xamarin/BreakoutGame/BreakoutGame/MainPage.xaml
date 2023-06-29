@@ -4,7 +4,7 @@
              x:Class="BreakoutGame.MainPage">
 
     <StackLayout VerticalOptions="Center" WidthRequest="200" HorizontalOptions="Center">
-        <Image Source="titleApplication.png" />
+        <Image Source="titleApplication.jpg" />
     </StackLayout>
     
 </ContentPage>

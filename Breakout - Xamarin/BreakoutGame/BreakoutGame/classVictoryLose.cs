@@ -12,16 +12,16 @@ namespace BreakoutGame
 {
     public class classVictoryLose
     {
-        private int level { get; set; } = 1;
-        private int vitessePourcentage { get; set; } = 0;
-        private int largeurPourcentage { get; set; } = 0;
-        private string _title { get; set; }
-        private string _description { get; set; }
-        private string btnYes { get; set; }
-        private string btnNo { get; set; }
-        private Button _btnLevel { get; set; }
-        private int nbHeart { get; set; } = -1;
-        private List<Image> _imageHeart { get; set; }
+        private int level = 1;
+        private int speedUp = 0;
+        private int widthDown = 0;
+        private string _title;
+        private string _description;
+        private string btnYes;
+        private string btnNo;
+        private Button _btnLevel;
+        private int nbHeart = -1;
+        private List<Image> _imageHeart;
 
         public classVictoryLose(Button btnLevel, List<Image> imageHeart)
         {
@@ -42,11 +42,11 @@ namespace BreakoutGame
 
         private void Victory()
         {
-            vitessePourcentage += 10;
-            largeurPourcentage += 10;
+            speedUp += 10;
+            widthDown += 10;
             level++;
             _title = "Ganaste";
-            _description = $"↗Level : +1\n↗Speed : +{vitessePourcentage}%\n↘Ancho : -{largeurPourcentage}%";
+            _description = $"↗Nivel : +1\n↗Velocidad : +{speedUp}%\n↘Ancho : -{widthDown}%";
             btnNo = "Salir";
             btnYes = "Continuar";
         }
@@ -65,12 +65,12 @@ namespace BreakoutGame
         private void NoneHeart()
         {
             _title = "Perdiste";
-            _description = $"El juego se acabó\nPuntuacion :\nNivel : {level}\nVelocidad : +{vitessePourcentage}%\nAncho : -{largeurPourcentage}%";
+            _description = $"El juego se acabó\nPuntuacion :\nNivel : {level}\nVelocidad : +{speedUp}%\nAncho : -{widthDown}%";
             btnYes = "Reiniciar";
             btnNo = "Salir";
             level = 1;
-            vitessePourcentage = 0;
-            largeurPourcentage = 0;
+            speedUp = 0;
+            widthDown = 0;
         }
 
         private async Task<bool> restart(bool win,classBall ball, classEnemy enemy, classPadde padde)
@@ -79,20 +79,20 @@ namespace BreakoutGame
             bool e = await App.Current.MainPage.DisplayAlert(_title, _description + text , btnYes, btnNo);
             if (e)
             {
-                padde.setPaddlePosition(0.5);
+                padde.setPaddePosition(0.5);
                 ball.setBallPosition(0.5, 0.87);
 
                 if (win)
                 {
-                    padde.setPaddleSize(0.2 - ((0.2 * largeurPourcentage) / 100), 0.03);
+                    padde.setPaddeSize(0.2 - ((0.2 * widthDown) / 100), 0.03);
                     if (ball.valueY < 0)
-                        ball.valueY -= ((ball.valueY * vitessePourcentage) / 100);
+                        ball.valueY -= ((ball.valueY * speedUp) / 100);
                     else
-                        ball.valueY = -ball.valueY - ((ball.valueY * vitessePourcentage)/100);
+                        ball.valueY = -ball.valueY - ((ball.valueY * speedUp)/100);
                     if (ball.valueX < 0)
-                        ball.valueX = -(ball.valueX - ((ball.valueX * vitessePourcentage) / 100));
+                        ball.valueX = -(ball.valueX - ((ball.valueX * speedUp) / 100));
                     else
-                        ball.valueX = -(ball.valueX + ((ball.valueX * vitessePourcentage) / 100));
+                        ball.valueX = -(ball.valueX + ((ball.valueX * speedUp) / 100));
 
                     Device.BeginInvokeOnMainThread(() =>
                     {
@@ -106,7 +106,7 @@ namespace BreakoutGame
                     {
                         ball.valueY = -0.025;
                         ball.valueX = -0.025;
-                        padde.setPaddleSize(0.2, 0.03);
+                        padde.setPaddeSize(0.2, 0.03);
                         Device.BeginInvokeOnMainThread(() =>
                         {
                             _btnLevel.Text = $"Nivel : {level}";

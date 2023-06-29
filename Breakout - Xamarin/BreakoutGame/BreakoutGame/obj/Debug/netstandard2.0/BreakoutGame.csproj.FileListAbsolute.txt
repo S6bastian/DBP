@@ -1,3 +1,42 @@
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.deps.json
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.pdb
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.AssemblyReference.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\PageBackground.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\PageGame.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfoInputs.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfo.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\refint\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.pdb
+C:\Users\Nacho\Documents\UCSP\2023-1\Desarrollo Basado en Plataformas\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\ref\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.deps.json
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.pdb
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.AssemblyReference.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\PageBackground.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\PageGame.xaml.g.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfoInputs.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfo.cs
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.CoreCompileInputs.cache
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\refint\BreakoutGame.dll
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.pdb
+C:\Users\Nacho\Documents\UCSP\2023-1\DBP\Xamarin\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\ref\BreakoutGame.dll
+E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.deps.json
+E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.dll
+E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.pdb
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.AssemblyReference.cache
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.GeneratedMSBuildEditorConfig.editorconfig
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -8,9 +47,6 @@ E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\Breakou
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfoInputs.cache
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.AssemblyInfo.cs
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.csproj.CoreCompileInputs.cache
-E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.deps.json
-E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.dll
-E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\bin\Debug\netstandard2.0\BreakoutGame.pdb
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\XamlC.stamp
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\BreakoutGame.dll
 E:\UCSP\Desarrollo Basado en Plataformas\Breakout - Xamarin\BreakoutGame\BreakoutGame\obj\Debug\netstandard2.0\refint\BreakoutGame.dll

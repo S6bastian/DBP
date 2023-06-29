@@ -13,14 +13,14 @@ namespace BreakoutGame
 {
     public class classTimerBall
     {
-        private bool _valueTimer { get; set; }
-        private classBall _ball { get; set; }
-        private classPadde _padde { get; set; }
-        private classEnemy _enemy { get; set; }
-        private classVictoryLose _victoryLose { get; set; }
+        private bool _valueTimer;
+        private classBall _ball;
+        private classPadde _padde;
+        private classEnemy _enemy;
+        private classVictoryLose _victoryLose;
         int count = 4;
-        private bool win { get; set; }
-        Label _lbl { get; set; }
+        private bool win;
+        Label _lbl;
 
         public classTimerBall(classBall ball, classPadde padde, classEnemy enemy, Label lbl, Button btnLevel, List<Image> imageHeart)
         {
@@ -38,15 +38,14 @@ namespace BreakoutGame
                 if (_valueTimer)
                 {
                     _ball.moveBall();
-                    if (_ball.valueY <= 0.2)
-                        _enemy.collisionEnemy();
-                    _ball.collisionBalle(_padde.boxPadde);
+                    _enemy.collisionEnemy();
+                    _ball.collisionBall(_padde.boxPadde);
                     if (_ball.boxBall.Y >= _padde.boxPadde.Y + _padde.boxPadde.Height)
                     {
                         Stop();
                         win = false;
                     }
-                    else if (_enemy.listEnemyInvisible==0)
+                    else if (_enemy.countVisible==0)
                     {
                         Stop();
                         win = true;

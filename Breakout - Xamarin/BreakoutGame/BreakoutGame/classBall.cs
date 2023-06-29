@@ -7,14 +7,14 @@ namespace BreakoutGame
 {
     public class classBall
     {
-        public double valueX { get; set; } = 0.025;
-        public double valueY { get; set; } = -0.025;
+        public double valueX = 0.025;
+        public double valueY = -0.025;
 
-        private double _positionX { get; set; }
-        private double _positionY { get; set; }
-        private double _sizeWidth { get; set; }
-        private double _sizeHeight { get; set; }
-        public BoxView boxBall { get; set; }
+        private double _positionX;
+        private double _positionY;
+        private double _sizeWidth;
+        private double _sizeHeight;
+        public BoxView boxBall;
         public classBall()
         {
         }
@@ -31,28 +31,23 @@ namespace BreakoutGame
         }
         public void setBallPosition(double x, double y)
         {
-            Rectangle paddingRect = new Rectangle(x, y, boxBall.Width, boxBall.Height);
+            Rectangle paddingRect = new Rectangle(x, y, _sizeWidth, _sizeHeight);
             boxBall.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
             _positionX = x;
             _positionY = y;
         }
-        public void setBallSize(double width, double height)
-        {
-            Rectangle paddingRect = new Rectangle(boxBall.X, boxBall.Y, width, height);
-            boxBall.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
-        }
         public void moveBall()
         {
-           Rectangle paddingRect = new Rectangle(_positionX + valueX, _positionY + valueY, boxBall.Width, boxBall.Height);
+           Rectangle paddingRect = new Rectangle(_positionX + valueX, _positionY + valueY, _sizeWidth, _sizeHeight);
            boxBall.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
             _positionX = _positionX + valueX;
             _positionY = _positionY + valueY;
         } 
-        public void collisionBalle(BoxView pad)
+        public void collisionBall(BoxView padde)
         {
             if (_positionX >= 1 || _positionX <= 0)
                 valueX = -valueX;
-            else if (boxBall.Bounds.IntersectsWith(pad.Bounds))
+            else if (boxBall.Bounds.IntersectsWith(padde.Bounds))
                 if (valueY > 0)
                     valueY = -valueY;
             if(_positionY <= 0)

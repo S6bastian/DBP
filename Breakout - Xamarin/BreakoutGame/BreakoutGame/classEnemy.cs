@@ -8,27 +8,25 @@ namespace BreakoutGame
 {
     public class classEnemy
     {
-        private Random random = new Random();
-
-        public List<Button> listEnemy { get; set; }
-        public int listEnemyInvisible { get; set; }
-        private classBall _ball { get; set; }
-        private AbsoluteLayout _gameArea { get; set; }
+        public List<Button> listEnemy;
+        public int countVisible;
+        private classBall _ball;
+        private AbsoluteLayout _gameArea;
         public classEnemy(classBall ball, AbsoluteLayout gameArea)
         {
             listEnemy = new List<Button>();
             _ball = ball;
             _gameArea = gameArea;
         }
-        private Button createEnnemy(double x, double y, double width, double height)
+        private Button createEnemy(double x, double y, double width, double height)
         {
-            Button boxEnnemy = new Button { BackgroundColor = /*Color.FromRgb(random.Next(30, 255), random.Next(30, 255), random.Next(30, 255))*/Color.Red, CornerRadius = 5,
+            Button boxEnemy = new Button { BackgroundColor = Color.Red, CornerRadius = 5,
             BorderColor = Color.Khaki, BorderWidth = 3};
             Rectangle paddingRect = new Rectangle(x,y, width, height);
-            boxEnnemy.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
-            boxEnnemy.SetValue(AbsoluteLayout.LayoutFlagsProperty, AbsoluteLayoutFlags.All);
+            boxEnemy.SetValue(AbsoluteLayout.LayoutBoundsProperty, paddingRect);
+            boxEnemy.SetValue(AbsoluteLayout.LayoutFlagsProperty, AbsoluteLayoutFlags.All);
 
-            return boxEnnemy;
+            return boxEnemy;
         }
 
         public void collisionEnemy()
@@ -40,7 +38,7 @@ namespace BreakoutGame
                     if(_ball.valueY < 0)
                         _ball.valueY = -_ball.valueY;
                     listEnemy[i].IsVisible = false;
-                    listEnemyInvisible--;
+                    countVisible--;
                 }
             }
         }
@@ -51,15 +49,12 @@ namespace BreakoutGame
             {
                 for (int j = 1; j < 3; j++)
                 {
-                    Button enemy = createEnnemy(i * 0.2, j * 0.09, 0.15, 0.08);
+                    Button enemy = createEnemy(i * 0.2, j * 0.09, 0.15, 0.08);
                     listEnemy.Add(enemy);
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        _gameArea.Children.Add(enemy);
-                    });
+                    _gameArea.Children.Add(enemy);
                 }
             }
-            listEnemyInvisible = listEnemy.Count;
+            countVisible = listEnemy.Count;
         }
 
         public void EnemyVisible()
@@ -68,7 +63,7 @@ namespace BreakoutGame
             {
                 listEnemy[i].IsVisible = true;
             }
-            listEnemyInvisible = listEnemy.Count;
+            countVisible = listEnemy.Count;
         }
     }
 }

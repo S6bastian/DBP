@@ -31,10 +31,10 @@ namespace BreakoutGame
             };
 
             foreach (FileImageSource src in imageSources)
-                stackLayoutImageBackground.Children.Add(creaateImage(src));
+                stackLayoutImageBackground.Children.Add(creaImagen(src));
         }
 
-        private ImageButton creaateImage(string src)
+        private ImageButton creaImagen(string src)
         {
             ImageButton img = new ImageButton();
             img.Source = src;

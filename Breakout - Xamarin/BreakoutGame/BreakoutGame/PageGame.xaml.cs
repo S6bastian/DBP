@@ -26,7 +26,7 @@ namespace BreakoutGame
             InitializeComponent();
             imageHeart = new List<Image>() { heart1, heart2, heart3, heart4 };
             source = src;
-            padde = new classPadde(1);
+            padde = new classPadde();
             ball = new classBall();
             enemy = new classEnemy(ball, gameArea);
             padde.createPadde(0.5, 0.9, 0.2, 0.03);
@@ -41,7 +41,7 @@ namespace BreakoutGame
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             var slide = (Slider)sender;
-            padde.setPaddlePosition(slide.Value);
+            padde.setPaddePosition(slide.Value);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
